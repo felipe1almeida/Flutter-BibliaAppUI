@@ -1,6 +1,7 @@
 # biblia_app_ui
 
 Recreating interface of a biblia app.
+30 minute project - Speed Code
 
 Splash                     |  Login              
 :-------------------------:|:-------------------------:
