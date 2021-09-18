@@ -1,3 +1,4 @@
+import 'package:biblia_app_ui/theme/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -7,12 +8,11 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            SvgPicture.asset('assets/images/BibliaApp.svg'),
-          ],
+          children: [SvgPicture.asset('assets/images/BibliaApp.svg')],
         ),
       ),
       body: Column(
@@ -26,7 +26,7 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.w500,
                 fontSize: 36,
-                color: Colors.white,
+                color: textPrimary,
               ),
             ),
           ),
@@ -37,7 +37,7 @@ class LoginPage extends StatelessWidget {
               style: TextStyle(
                 fontWeight: FontWeight.w300,
                 fontSize: 20,
-                color: Colors.white,
+                color: textPrimary,
               ),
             ),
           ),
@@ -49,9 +49,7 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: 'E-mail',
                 hintStyle: TextStyle(
-                  color: Color(
-                    0xff92949F,
-                  ),
+                  color: inputPrimary,
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Color(0xff92949F), width: 1.0),
@@ -63,6 +61,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               style: TextStyle(color: Colors.white),
+              keyboardType: TextInputType.emailAddress,
             ),
           ),
           SizedBox(height: 24),
@@ -74,9 +73,7 @@ class LoginPage extends StatelessWidget {
               decoration: InputDecoration(
                 hintText: 'Senha',
                 hintStyle: TextStyle(
-                  color: Color(
-                    0xff92949F,
-                  ),
+                  color: inputPrimary,
                 ),
                 focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Color(0xff92949F), width: 1.0),
@@ -88,6 +85,7 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
               style: TextStyle(color: Colors.white),
+              keyboardType: TextInputType.visiblePassword,
             ),
           ),
           Spacer(),
@@ -99,7 +97,7 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
                   fontSize: 14,
-                  color: Color(0xff92949F),
+                  color: textSecondary,
                 ),
               ),
               Text(
@@ -107,7 +105,7 @@ class LoginPage extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w400,
                   fontSize: 15,
-                  color: Colors.white,
+                  color: textPrimary,
                 ),
               ),
             ],
@@ -123,12 +121,12 @@ class LoginPage extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 20,
-                    color: Color(0xff1E1C24),
+                    color: btnPrimary,
                   ),
                 ),
               ),
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: containerBg,
                 borderRadius: BorderRadius.circular(25),
               ),
             ),

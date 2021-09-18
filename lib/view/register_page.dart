@@ -1,6 +1,8 @@
+import 'package:biblia_app_ui/theme/app_colors.dart';
 import 'package:biblia_app_ui/view/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:get/get.dart';
 
 class RegisterPage extends StatelessWidget {
   const RegisterPage({Key? key}) : super(key: key);
@@ -32,7 +34,7 @@ class RegisterPage extends StatelessWidget {
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 30,
-                  color: Colors.white,
+                  color: textPrimary,
                 ),
                 textAlign: TextAlign.center,
               ),
@@ -44,61 +46,66 @@ class RegisterPage extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontSize: 15,
-                    color: Color(0xff92949F),
+                    color: textSecondary,
                   ),
                   textAlign: TextAlign.center,
                 ),
               ),
               SizedBox(height: 52),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(18),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Cadastrar',
-                        style: TextStyle(
-                          fontWeight: FontWeight.w700,
-                          fontSize: 17,
-                          color: Color(0xff1E1C24),
+              Container(
+                width: double.infinity,
+                height: 70,
+                child: Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Positioned(
+                      right: 60,
+                      child: InkWell(
+                        child: Container(
+                          decoration: BoxDecoration(
+                            color: containerBgDark,
+                            borderRadius: BorderRadius.circular(18),
+                          ),
+                          child: Center(
+                            child: Text(
+                              'Logar',
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                fontSize: 17,
+                                color: textPrimary,
+                              ),
+                            ),
+                          ),
+                          width: 156,
+                          height: 56,
                         ),
+                        onTap: () => Get.to(() => LoginPage()),
                       ),
                     ),
-                    width: 156,
-                    height: 56,
-                  ),
-                  InkWell(
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xff3B3A42),
-                        borderRadius: BorderRadius.circular(18),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Logar',
-                          style: TextStyle(
-                            fontWeight: FontWeight.w700,
-                            fontSize: 17,
-                            color: Colors.white,
+                    Positioned(
+                      left: 65,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: containerBg,
+                          borderRadius: BorderRadius.circular(18),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Cadastrar',
+                            style: TextStyle(
+                              fontWeight: FontWeight.w700,
+                              fontSize: 17,
+                              color: btnPrimary,
+                            ),
                           ),
                         ),
-                      ),
-                      width: 156,
-                      height: 56,
-                    ),
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (BuildContext context) => LoginPage(),
+                        width: 156,
+                        height: 56,
                       ),
                     ),
-                  ),
-                ],
-              )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
