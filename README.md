@@ -1,16 +1,16 @@
 # biblia_app_ui
 
-A new Flutter project.
+Recreating interface of a biblia app.<br>
+30 minute project - Speed Code
 
-## Getting Started
+Splash                     |  Login              
+:-------------------------:|:-------------------------:
+<img src="https://user-images.githubusercontent.com/54601019/132112056-4b27f3ba-438e-41d4-b2c6-e97b5d710e04.png" width="300"> |  <img src="https://user-images.githubusercontent.com/54601019/132112057-8792d609-f33f-4303-a2eb-45dcd83ff876.png" width="300"> | 
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Figma Original                       
+:-------------------------:
+<img src="https://user-images.githubusercontent.com/54601019/132112081-62f3591a-ebb6-47b7-bf11-2310be28726d.png" width="600"> 
+
