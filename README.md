@@ -3,9 +3,25 @@
 Recreating interface of a biblia app.<br>
 30 minute project - Speed Code
 
-Splash                     |  Login              
+Splash                     |  Login                    
 :-------------------------:|:-------------------------:
 <img src="https://user-images.githubusercontent.com/54601019/132112056-4b27f3ba-438e-41d4-b2c6-e97b5d710e04.png" width="300"> |  <img src="https://user-images.githubusercontent.com/54601019/132112057-8792d609-f33f-4303-a2eb-45dcd83ff876.png" width="300"> | 
+
+| Video 
+|:-------------------------:
+
+ <video src="https://user-images.githubusercontent.com/54601019/133908220-12af3538-a8a8-4c89-85e4-b6216f29f2b4.mov" width="300"> | 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
